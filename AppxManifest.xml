@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  filecp — Microsoft Store Package Manifest
+  ──────────────────────────────────────────
+  BEFORE SUBMITTING TO THE STORE:
+  1. Replace "Publisher" with the value from Partner Center (CN=XXXXX).
+  2. Replace "Identity Name" with your registered app identity from Partner Center.
+  3. Update Version each time you submit an update.
+-->
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:uap10="http://schemas.microsoft.com/appx/manifest/uap/windows10/10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
+  IgnorableNamespaces="uap uap3 uap10 rescap desktop">
+
+  <!-- ── Identity ─────────────────────────────────────────────────── -->
+  <!-- Replace Name and Publisher with values from Partner Center     -->
+  <Identity
+    Name="filecp"
+    Publisher="CN=filecp"
+    Version="1.0.0.0"
+    ProcessorArchitecture="x64" />
+
+  <Properties>
+    <DisplayName>filecp</DisplayName>
+    <PublisherDisplayName>filecp</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>Instant, Private, and Seamless File Sharing</Description>
+  </Properties>
+
+  <!-- ── Dependencies ─────────────────────────────────────────────── -->
+  <Dependencies>
+    <TargetDeviceFamily
+      Name="Windows.Desktop"
+      MinVersion="10.0.17763.0"
+      MaxVersionTested="10.0.22621.0" />
+  </Dependencies>
+
+  <!-- ── Resources ────────────────────────────────────────────────── -->
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+
+  <!-- ── Application ──────────────────────────────────────────────── -->
+  <Applications>
+    <Application
+      Id="filecp"
+      Executable="filecp.exe"
+      EntryPoint="Windows.FullTrustApplication">
+
+      <uap:VisualElements
+        DisplayName="filecp"
+        Description="Instant, Private, and Seamless File Sharing — upload files on one device, scan a QR code, download on another."
+        BackgroundColor="#1a1a2e"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png">
+
+        <uap:DefaultTile
+          Wide310x150Logo="Assets\Wide310x150Logo.png"
+          Square71x71Logo="Assets\Square71x71Logo.png"
+          Square310x310Logo="Assets\LargeTile.png"
+          ShortName="filecp">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#1a1a2e" />
+      </uap:VisualElements>
+
+      <!-- ── App Execution Alias (optional: launch from command line) ── -->
+      <Extensions>
+        <uap3:Extension Category="windows.appExecutionAlias">
+          <uap3:AppExecutionAlias>
+            <desktop:ExecutionAlias Alias="filecp.exe" />
+          </uap3:AppExecutionAlias>
+        </uap3:Extension>
+      </Extensions>
+
+    </Application>
+  </Applications>
+
+  <!-- ── Capabilities ─────────────────────────────────────────────── -->
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <rescap:Capability Name="runFullTrust" />
+  </Capabilities>
+
+</Package>

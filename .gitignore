@@ -1,0 +1,39 @@
+# Build artifacts
+build/
+dist/
+*.spec.bak
+__pycache__/
+*.pyc
+
+# PyInstaller
+*.manifest
+*.spec.tmp
+
+# MSIX packaging
+msix_staging/
+msix_validate_temp/
+priconfig.xml
+*.msix
+*.msixbundle
+*.msixupload
+*.appx
+*.appxbundle
+*.appxupload
+
+# Certificates (NEVER commit these)
+*.pfx
+*.cer
+*.p12
+*.key
+*.pem
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

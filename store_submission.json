@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json.schemastore.org/store-app-submission.json",
+  "appId": "",
+  "productName": "filecp",
+  "description": {
+    "short": "Instant, Private, and Seamless File Sharing",
+    "full": "Upload files on one device, scan a QR code, and download them on another. No accounts, no tracking, just transfer. Files are encrypted at rest and sessions auto-expire after your chosen duration. Supports images, documents, videos, archives — any file type up to 200 MB."
+  },
+  "category": "Productivity",
+  "subcategory": "File managers",
+  "keywords": [
+    "file sharing",
+    "file transfer",
+    "QR code",
+    "send files",
+    "encrypted transfer",
+    "cross-device",
+    "no account",
+    "private sharing"
+  ],
+  "systemRequirements": {
+    "minimum": {
+      "os": "Windows 10 version 1809 (build 17763) or later",
+      "architecture": "x64",
+      "ram": "256 MB",
+      "notes": "Requires internet connection. Microsoft Edge WebView2 Runtime (included in Windows 10 1809+ and Windows 11)."
+    }
+  },
+  "ageRating": "3+",
+  "privacyPolicyUrl": "https://simarsinghrayat.github.io/Window_app_filecp/privacy.html",
+  "supportContact": "https://github.com/SIMARSINGHRAYAT/Window_app_filecp/issues",
+  "website": "https://github.com/SIMARSINGHRAYAT/Window_app_filecp",
+  "pricing": "Free",
+  "publisherName": "Simar Singh Rayat",
+  "developerName": "Simar Singh Rayat",
+  "copyright": "Copyright (c) 2026 Simar Singh Rayat. All rights reserved.",
+  "license": "MIT",
+
+  "submission_paths": {
+    "recommended": "MSIX",
+    "msix": {
+      "package": "dist/filecp.msix",
+      "build_command": "build_msix.bat",
+      "signing": "Not required — Partner Center re-signs with Microsoft certificate during ingestion",
+      "silent_install": "Automatic — MSIX installs silently by design",
+      "add_remove_programs": "Automatic — MSIX registers app automatically",
+      "code_signing": "Automatic — Microsoft re-signs during Store ingestion"
+    },
+    "exe_installer": {
+      "package": "dist/filecp_setup.exe",
+      "build_command": "build_store.bat",
+      "package_url": "https://simarsinghrayat.github.io/Window_app_filecp/v1.0.0/filecp_setup.exe",
+      "silent_install_params": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+      "signing": "REQUIRED — must use CA-trusted SHA256 code signing certificate (self-signed NOT accepted)",
+      "add_remove_programs": "Handled by Inno Setup installer with explicit registry entries"
+    }
+  },
+
+  "store_submission_steps": [
+    "1. Register at https://partner.microsoft.com/ (one-time $19 fee for individual)",
+    "2. Create a new app reservation — note the Package Identity Name and Publisher (CN=XXXXX)",
+    "3. Update AppxManifest.xml: set Identity Name and Publisher to match Partner Center values",
+    "4. MSIX path: Run build_msix.bat, upload dist\\filecp.msix to Partner Center",
+    "5. EXE path: Run build_store.bat, host filecp_setup.exe at the Package URL, provide silent install params",
+    "6. Fill in Store listing: description, screenshots (1366x768 min), privacy policy URL",
+    "7. Complete IARC age rating questionnaire",
+    "8. Submit for certification (typically 1-3 business days)",
+    "9. Run validate_store.bat to verify all checks pass before submission"
+  ],
+
+  "validation_errors_fixed": {
+    "silent_install_check": {
+      "error": "App does not install silently (Policy 10.2.9)",
+      "fix_msix": "MSIX installs silently by design — no action needed",
+      "fix_exe": "Removed PrivilegesRequiredOverridesAllowed=dialog from installer.iss; all wizard pages disabled"
+    },
+    "add_remove_programs": {
+      "error": "Could not identify app name and publisher in Add/Remove Programs",
+      "fix_msix": "MSIX registers automatically — no action needed",
+      "fix_exe": "Added [Registry] section in installer.iss with explicit DisplayName and Publisher entries"
+    },
+    "bundleware_check": {
+      "error": "Could not identify app name and publisher in Add/Remove Programs",
+      "fix_msix": "MSIX sandbox prevents bundleware — no action needed",
+      "fix_exe": "Same fix as Add/Remove Programs — proper registry entries"
+    },
+    "code_sign_check": {
+      "error": "App does not have a digital signature (Policy 10.2.9)",
+      "fix_msix": "Partner Center re-signs with Microsoft certificate — submit unsigned",
+      "fix_exe": "build_store.bat creates and applies self-signed cert; for Store, purchase CA-trusted SHA256 cert"
+    }
+  }
+}

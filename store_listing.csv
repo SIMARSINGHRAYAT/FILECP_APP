@@ -1,0 +1,29 @@
+Field,Value
+ProductName,filecp
+ShortTitle,filecp - File Sharing
+Voice title,file c p
+ShortDescription,"Instant, Private, and Seamless File Sharing"
+Description,"Instant, Private, and Seamless File Sharing. Upload files on one device, scan a QR code, and download them on another. No accounts, no tracking, just transfer. Features: QR code pairing for instant sharing; files encrypted at rest on server; sessions auto-expire (1 min to 24 hours); send and receive modes; supports all file types up to 200 MB; zero accounts required; downloads save directly to your Downloads folder; native Windows desktop app with Edge WebView2."
+WhatsNew,Initial release
+Category,Productivity
+Subcategory,File managers
+PrivacyPolicyUrl,https://simarsinghrayat.github.io/Window_app_filecp/privacy.html
+WebsiteUrl,https://github.com/SIMARSINGHRAYAT/Window_app_filecp
+SupportUrl,https://github.com/SIMARSINGHRAYAT/Window_app_filecp/issues
+AppVersion,1.0.0.0
+InstallerType,MSIX
+PackageUrl_MSIX,dist\filecp.msix
+PackageUrl_EXE,https://simarsinghrayat.github.io/Window_app_filecp/v1.0.0/filecp_setup.exe
+InstallerParameters_EXE,/VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+Architecture,x64
+MinimumOperatingSystemVersion,Windows 10 version 1809 (10.0.17763.0)
+Languages,en-us
+AgeRating,3+
+Pricing,Free
+SearchTerms,"file sharing, file transfer, QR code, send files, encrypted transfer, cross-device, no account, private sharing"
+CopyrightAndTrademarkInfo,"Copyright (c) 2026 Simar Singh Rayat. All rights reserved."
+LicenseTerms,MIT
+DeveloperName,Simar Singh Rayat
+PublisherName,Simar Singh Rayat
+SubmissionNotes_MSIX,"Upload dist\filecp.msix directly to Partner Center. MSIX is the recommended format — it automatically handles silent install, Add/Remove Programs registration, and code signing (Microsoft re-signs during ingestion)."
+SubmissionNotes_EXE,"Upload filecp_setup.exe to a public URL and provide it as Package URL. Silent install params: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART. REQUIRES a CA-trusted SHA256 code signing certificate (self-signed is NOT accepted for EXE submissions)."
