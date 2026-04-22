@@ -49,6 +49,7 @@
     "exe_installer": {
       "package": "dist/filecp_setup.exe",
       "build_command": "build_store.bat",
+      "installer_type": "Win32 Package",
       "package_url": "https://github.com/SIMARSINGHRAYAT/Window_app_filecp/releases/download/v1.0.0/filecp_setup.exe",
       "silent_install_params": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
       "signing": "REQUIRED — must use CA-trusted SHA256 code signing certificate (self-signed NOT accepted)",
@@ -61,7 +62,7 @@
     "2. Create a new app reservation — note the Package Identity Name and Publisher (CN=XXXXX)",
     "3. Update AppxManifest.xml: set Identity Name and Publisher to match Partner Center values",
     "4. MSIX path: Run build_msix.bat, upload dist\\filecp.msix to Partner Center",
-    "5. EXE path: Run build_store.bat, host filecp_setup.exe at the Package URL, provide silent install params",
+    "5. EXE path: Run build_store.bat, select Win32 Package in Partner Center, host filecp_setup.exe at the Package URL, provide silent install params",
     "6. Fill in Store listing: description, screenshots (1366x768 min), privacy policy URL",
     "7. Complete IARC age rating questionnaire",
     "8. Submit for certification (typically 1-3 business days)",

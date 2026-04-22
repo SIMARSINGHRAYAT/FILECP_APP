@@ -13,6 +13,7 @@ SupportUrl,https://github.com/SIMARSINGHRAYAT/Window_app_filecp/issues
 AppVersion,1.0.0.0
 InstallerType,MSIX
 PackageUrl_MSIX,dist\filecp.msix
+InstallerType_EXE,Win32 Package
 PackageUrl_EXE,https://simarsinghrayat.github.io/Window_app_filecp/v1.0.0/filecp_setup.exe
 InstallerParameters_EXE,/VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 Architecture,x64

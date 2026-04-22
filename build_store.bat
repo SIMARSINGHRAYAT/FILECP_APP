@@ -197,7 +197,7 @@ echo   │  RECOMMENDED: Use build_msix.bat instead — MSIX format   │
 echo   │  solves ALL validation issues with zero cost.            │
 echo   └──────────────────────────────────────────────────────────┘
 echo.
-echo   Package URL (update on gh-pages branch):
+echo   Win32 Package URL (update on gh-pages branch):
 echo     https://simarsinghrayat.github.io/Window_app_filecp/v1.0.0/filecp_setup.exe
 echo.
 echo   Partner Center:  https://partner.microsoft.com/dashboard

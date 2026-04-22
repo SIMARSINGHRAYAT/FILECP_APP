@@ -117,7 +117,7 @@ Use this only if you specifically need an EXE installer submission.
    build_store.bat
    ```
 4. **Host** `dist\filecp_setup.exe` at a public URL
-5. **In Partner Center**, provide:
+5. **In Partner Center**, choose **Win32 Package** and provide:
    - Package URL: `https://your-host.com/filecp_setup.exe`
    - Silent install params: `/VERYSILENT /SUPPRESSMSGBOXES /NORESTART`
 
