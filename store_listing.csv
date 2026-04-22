@@ -22,7 +22,7 @@ ProductFeatures17,Text,
 ProductFeatures18,Text,
 ProductFeatures19,Text,
 ProductFeatures20,Text,
-ShortDescription,Text,Instant, Private, and Seamless File Sharing
+ShortDescription,Text,"Instant, Private, and Seamless File Sharing"
 SearchTerms1,Text,file sharing
 SearchTerms2,Text,file transfer
 SearchTerms3,Text,QR code
@@ -56,9 +56,9 @@ RequirementsRecommended9,Text,
 RequirementsRecommended10,Text,
 RequirementsRecommended11,Text,
 StoreLogos1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/StoreLogo.png
-StoreLogos2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
-Screenshots1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
-Screenshots2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+StoreLogos2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/StoreLogo.png
+Screenshots1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/SplashScreen.png
+Screenshots2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/SplashScreen.png
 Screenshots3,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots4,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots5,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
@@ -67,5 +67,5 @@ Screenshots7,Provide the file name only if it is in the same folder. Provide rel
 Screenshots8,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots9,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots10,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
-HeroArts,Text,
+HeroArts,Text,store_assets/SplashScreen.png
 Trailers,Text,
