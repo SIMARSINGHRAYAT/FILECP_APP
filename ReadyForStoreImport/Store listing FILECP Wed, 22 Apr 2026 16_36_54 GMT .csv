@@ -1,12 +1,12 @@
 ﻿Field,Type,English
-ProductName,Text,filecp
-Description,Text,"Instant, Private, and Seamless File Sharing. Upload files on one device, scan a QR code, and download them on another. No accounts, no tracking, just transfer. Features: QR code pairing for instant sharing; files encrypted at rest on server; sessions auto-expire (1 min to 24 hours); send and receive modes; supports all file types up to 200 MB; zero accounts required; downloads save directly to your Downloads folder; native Windows desktop app with Edge WebView2."
-WhatsNew,Text,Initial release
-ProductFeatures1,Text,QR code pairing for instant sharing
-ProductFeatures2,Text,Files encrypted at rest on server
-ProductFeatures3,Text,Sessions auto-expire
-ProductFeatures4,Text,Send and receive modes
-ProductFeatures5,Text,Supports all file types up to 200 MB
+ProductName,Text,filecp - Instant File Sharing
+Description,Text,"Instant, Private, and Seamless File Sharing. A lightweight Windows desktop application for secure session-based file sharing across devices. Upload files on one device, scan a QR code, and download them on another — no accounts, no tracking, just transfer.\n\nFeatures:\n- QR Code Pairing: Scan to instantly share files between devices\n- Encrypted Transfer: Files are encrypted at rest on the server\n- Auto-Expiry: Sessions self-destruct after your chosen duration\n- Send & Receive: Upload files or generate a QR code to receive files\n- Multi-Format: Images, documents, videos, archives, anything\n- No Login Required: Zero accounts, start sharing immediately"
+WhatsNew,Text,Initial release of filecp.
+ProductFeatures1,Text,QR Code Pairing for instant wireless sharing
+ProductFeatures2,Text,End-to-End Encrypted Transfers
+ProductFeatures3,Text,Auto-Expiring Sessions
+ProductFeatures4,Text,Cross-device Send & Receive
+ProductFeatures5,Text,No account required to send or receive
 ProductFeatures6,Text,
 ProductFeatures7,Text,
 ProductFeatures8,Text,
@@ -22,16 +22,16 @@ ProductFeatures17,Text,
 ProductFeatures18,Text,
 ProductFeatures19,Text,
 ProductFeatures20,Text,
-ShortDescription,Text,"Instant, Private, and Seamless File Sharing"
-SearchTerms1,Text,file sharing
-SearchTerms2,Text,file transfer
-SearchTerms3,Text,QR code
-SearchTerms4,Text,send files
-SearchTerms5,Text,encrypted transfer
-SearchTerms6,Text,cross-device
-SearchTerms7,Text,private sharing
-Applicable license terms,Text,MIT
-Copyright,Text,Copyright (c) 2026 Simar Singh Rayat. All rights reserved.
+ShortDescription,Text,"Instant, Private, and Seamless File Sharing via QR Code."
+SearchTerms1,Text,file transfer
+SearchTerms2,Text,qr share
+SearchTerms3,Text,send files
+SearchTerms4,Text,private sharing
+SearchTerms5,Text,filecp
+SearchTerms6,Text,share anywhere
+SearchTerms7,Text,
+Applicable license terms,Text,MIT License
+Copyright,Text,Copyright 2026 Simar Singh Rayat
 DevelopedBy,Text,Simar Singh Rayat
 RequirementsMinimum1,Text,
 RequirementsMinimum2,Text,
@@ -55,10 +55,10 @@ RequirementsRecommended8,Text,
 RequirementsRecommended9,Text,
 RequirementsRecommended10,Text,
 RequirementsRecommended11,Text,
-StoreLogos1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/StoreLogo.png
-StoreLogos2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/StoreLogo.png
-Screenshots1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/SplashScreen.png
-Screenshots2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/SplashScreen.png
+StoreLogos1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+StoreLogos2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots3,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots4,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots5,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
@@ -67,5 +67,5 @@ Screenshots7,Provide the file name only if it is in the same folder. Provide rel
 Screenshots8,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots9,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots10,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
-HeroArts,Text,store_assets/SplashScreen.png
+HeroArts,Text,
 Trailers,Text,

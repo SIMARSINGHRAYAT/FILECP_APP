@@ -1,12 +1,12 @@
 ﻿Field,Type,English
-ProductName,Text,
-Description,Text,
-WhatsNew,Text,
-ProductFeatures1,Text,
-ProductFeatures2,Text,
-ProductFeatures3,Text,
-ProductFeatures4,Text,
-ProductFeatures5,Text,
+ProductName,Text,filecp - Instant File Sharing
+Description,Text,"Instant, Private, and Seamless File Sharing. A lightweight Windows desktop application for secure session-based file sharing across devices. Upload files on one device, scan a QR code, and download them on another — no accounts, no tracking, just transfer.\n\nFeatures:\n- QR Code Pairing: Scan to instantly share files between devices\n- Encrypted Transfer: Files are encrypted at rest on the server\n- Auto-Expiry: Sessions self-destruct after your chosen duration\n- Send & Receive: Upload files or generate a QR code to receive files\n- Multi-Format: Images, documents, videos, archives, anything\n- No Login Required: Zero accounts, start sharing immediately"
+WhatsNew,Text,Initial release of filecp.
+ProductFeatures1,Text,QR Code Pairing for instant wireless sharing
+ProductFeatures2,Text,End-to-End Encrypted Transfers
+ProductFeatures3,Text,Auto-Expiring Sessions
+ProductFeatures4,Text,Cross-device Send & Receive
+ProductFeatures5,Text,No account required to send or receive
 ProductFeatures6,Text,
 ProductFeatures7,Text,
 ProductFeatures8,Text,
@@ -22,17 +22,17 @@ ProductFeatures17,Text,
 ProductFeatures18,Text,
 ProductFeatures19,Text,
 ProductFeatures20,Text,
-ShortDescription,Text,
-SearchTerms1,Text,
-SearchTerms2,Text,
-SearchTerms3,Text,
-SearchTerms4,Text,
-SearchTerms5,Text,
-SearchTerms6,Text,
+ShortDescription,Text,"Instant, Private, and Seamless File Sharing via QR Code."
+SearchTerms1,Text,file transfer
+SearchTerms2,Text,qr share
+SearchTerms3,Text,send files
+SearchTerms4,Text,private sharing
+SearchTerms5,Text,filecp
+SearchTerms6,Text,share anywhere
 SearchTerms7,Text,
-Applicable license terms,Text,
-Copyright,Text,
-DevelopedBy,Text,
+Applicable license terms,Text,MIT License
+Copyright,Text,Copyright 2026 Simar Singh Rayat
+DevelopedBy,Text,Simar Singh Rayat
 RequirementsMinimum1,Text,
 RequirementsMinimum2,Text,
 RequirementsMinimum3,Text,
