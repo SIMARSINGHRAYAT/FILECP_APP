@@ -49,7 +49,7 @@
     "exe_installer": {
       "package": "dist/filecp_setup.exe",
       "build_command": "build_store.bat",
-      "package_url": "https://simarsinghrayat.github.io/Window_app_filecp/v1.0.0/filecp_setup.exe",
+      "package_url": "https://github.com/SIMARSINGHRAYAT/Window_app_filecp/releases/download/v1.0.0/filecp_setup.exe",
       "silent_install_params": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
       "signing": "REQUIRED — must use CA-trusted SHA256 code signing certificate (self-signed NOT accepted)",
       "add_remove_programs": "Handled by Inno Setup installer with explicit registry entries"

@@ -47,19 +47,24 @@ if "%INNO_COMPILER%"=="" (
 echo   Inno Setup: %INNO_COMPILER%
 
 REM Find signtool (SDK or NuGet cache)
-for /d %%d in ("C:\Program Files (x86)\Windows Kits\10\bin\10.*") do (
-    if exist "%%d\x64\signtool.exe" set "SIGNTOOL=%%d\x64\signtool.exe"
+REM Try local sdk_tools folder first
+if exist "sdk_tools\Microsoft.Windows.SDK.BuildTools.10.0.28000.1721\bin\10.0.28000.0\x64\signtool.exe" (
+    set "SIGNTOOL=sdk_tools\Microsoft.Windows.SDK.BuildTools.10.0.28000.1721\bin\10.0.28000.0\x64\signtool.exe"
+) else (
+    for /d %%d in ("C:\Program Files (x86)\Windows Kits\10\bin\10.*") do (
+        if exist "%%d\x64\signtool.exe" set "SIGNTOOL=%%d\x64\signtool.exe"
+    )
 )
 if "%SIGNTOOL%"=="" (
     for /r "%TEMP%\signtool_nuget" %%f in (signtool.exe) do (
-        echo %%f | findstr /i "x64" >nul && set "SIGNTOOL=%%f"
+        echo %%f | findstr /i "x64" >nul && if not "%%f"=="" set "SIGNTOOL=%%f"
     )
 )
 if "%SIGNTOOL%"=="" (
     echo   signtool not found in SDK, will download via NuGet...
     powershell -Command "$d='%TEMP%\signtool_nuget'; if(-not(Test-Path $d)){New-Item -ItemType Directory $d -Force|Out-Null}; if(-not(Test-Path \"$d\nuget.exe\")){Invoke-WebRequest 'https://dist.nuget.org/win-x86-commandline/latest/nuget.exe' -OutFile \"$d\nuget.exe\"}; &\"$d\nuget.exe\" install Microsoft.Windows.SDK.BuildTools -OutputDirectory $d -NonInteractive 2>&1|Out-Null"
     for /r "%TEMP%\signtool_nuget" %%f in (signtool.exe) do (
-        echo %%f | findstr /i "x64" >nul && set "SIGNTOOL=%%f"
+        echo %%f | findstr /i "x64" >nul && if not "%%f"=="" set "SIGNTOOL=%%f"
     )
 )
 if "%SIGNTOOL%"=="" (
@@ -112,11 +117,16 @@ echo   Certificate: %PFX_FILE%
 
 REM ── Step 5: Sign the exe ────────────────────────────────────────
 echo [5/8] Signing filecp.exe...
-"%SIGNTOOL%" sign /fd SHA256 /f "%PFX_FILE%" /p "%PFX_PASS%" /t http://timestamp.digicert.com "dist\filecp.exe"
-if errorlevel 1 (
-    echo   WARNING: Signing filecp.exe failed
+if exist "%SIGNTOOL%" (
+    "%SIGNTOOL%" sign /fd SHA256 /f "%PFX_FILE%" /p "%PFX_PASS%" /t http://timestamp.digicert.com "dist\filecp.exe"
+    if errorlevel 1 (
+        echo   WARNING: Signing filecp.exe failed
+    ) else (
+        echo   Signed dist\filecp.exe
+    )
 ) else (
-    echo   Signed dist\filecp.exe
+    echo   WARNING: signtool.exe not found at %SIGNTOOL%
+    echo   Skipping signature (EXE will be unsigned)
 )
 
 :build_installer
@@ -134,11 +144,15 @@ echo   Created dist\filecp_setup.exe
 REM ── Step 7: Sign the installer ──────────────────────────────────
 echo [7/8] Signing installer...
 if exist "%PFX_FILE%" (
-    "%SIGNTOOL%" sign /fd SHA256 /f "%PFX_FILE%" /p "%PFX_PASS%" /t http://timestamp.digicert.com "dist\filecp_setup.exe"
-    if errorlevel 1 (
-        echo   WARNING: Signing filecp_setup.exe failed
+    if exist "%SIGNTOOL%" (
+        "%SIGNTOOL%" sign /fd SHA256 /f "%PFX_FILE%" /p "%PFX_PASS%" /t http://timestamp.digicert.com "dist\filecp_setup.exe"
+        if errorlevel 1 (
+            echo   WARNING: Signing filecp_setup.exe failed
+        ) else (
+            echo   Signed dist\filecp_setup.exe
+        )
     ) else (
-        echo   Signed dist\filecp_setup.exe
+        echo   WARNING: signtool.exe not found, skipping signature
     )
 ) else (
     echo   Skipped signing (no certificate)

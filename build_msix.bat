@@ -31,10 +31,18 @@ echo.
 REM ── Step 0: Locate Windows SDK tools ────────────────────────────
 set "SDK_BIN="
 set "SDK_ROOT="
-for /d %%d in ("C:\Program Files (x86)\Windows Kits\10\bin\10.*") do (
-    if exist "%%d\x64\makeappx.exe" (
-        set "SDK_BIN=%%d\x64"
-        set "SDK_ROOT=%%d"
+
+REM Try local sdk_tools folder first
+if exist "sdk_tools\Microsoft.Windows.SDK.BuildTools.10.0.28000.1721\bin\10.0.28000.0\x64\makeappx.exe" (
+    set "SDK_BIN=sdk_tools\Microsoft.Windows.SDK.BuildTools.10.0.28000.1721\bin\10.0.28000.0\x64"
+    set "SDK_ROOT=sdk_tools\Microsoft.Windows.SDK.BuildTools.10.0.28000.1721"
+) else (
+    REM Fall back to system-wide installation
+    for /d %%d in ("C:\Program Files (x86)\Windows Kits\10\bin\10.*") do (
+        if exist "%%d\x64\makeappx.exe" (
+            set "SDK_BIN=%%d\x64"
+            set "SDK_ROOT=%%d"
+        )
     )
 )
 if "%SDK_BIN%"=="" (
@@ -63,17 +71,29 @@ if not exist "dist\filecp.exe" (
 )
 echo   OK dist\filecp.exe found
 
+REM ── Step 1b: Install dependencies ───────────────────────────
+echo.
+echo [1b/8] Installing Python dependencies...
+pip install -q -r requirements.txt >nul 2>&1
+if errorlevel 1 (
+    echo   WARNING: Some dependencies may not have installed, continuing...
+)
+
 REM ── Step 2: Generate Store assets ───────────────────────────────
 echo.
 echo [2/8] Generating Store image assets...
-python generate_store_assets.py
-if errorlevel 1 (
-    echo ERROR: Failed to generate store assets.
-    echo        Make sure Pillow is installed: pip install Pillow
-    pause
-    exit /b 1
+if exist "store_assets\StoreLogo.png" (
+    echo   OK Store assets already exist, skipping generation
+) else (
+    python generate_store_assets.py
+    if errorlevel 1 (
+        echo ERROR: Failed to generate store assets.
+        echo        Make sure Pillow is installed: pip install Pillow
+        pause
+        exit /b 1
+    )
+    echo   OK Store assets generated
 )
-echo   OK Store assets generated
 
 REM ── Step 3: Prepare MSIX staging directory ─────────────────────
 echo.
