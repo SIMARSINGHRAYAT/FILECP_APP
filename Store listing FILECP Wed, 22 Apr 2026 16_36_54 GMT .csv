@@ -1,5 +1,5 @@
 ﻿Field,Type,English
-ProductName,Text,filecp - Instant File Sharing
+ProductName,Text,FILECP
 Description,Text,"Instant, Private, and Seamless File Sharing. A lightweight Windows desktop application for secure session-based file sharing across devices. Upload files on one device, scan a QR code, and download them on another — no accounts, no tracking, just transfer.\n\nFeatures:\n- QR Code Pairing: Scan to instantly share files between devices\n- Encrypted Transfer: Files are encrypted at rest on the server\n- Auto-Expiry: Sessions self-destruct after your chosen duration\n- Send & Receive: Upload files or generate a QR code to receive files\n- Multi-Format: Images, documents, videos, archives, anything\n- No Login Required: Zero accounts, start sharing immediately"
 WhatsNew,Text,Initial release of filecp.
 ProductFeatures1,Text,QR Code Pairing for instant wireless sharing
