@@ -55,7 +55,7 @@ RequirementsRecommended8,Text,
 RequirementsRecommended9,Text,
 RequirementsRecommended10,Text,
 RequirementsRecommended11,Text,
-StoreLogos1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,MainLogo.png
+StoreLogos1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,MainLogo_1080.png
 StoreLogos2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 Screenshots1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,Screenshot1.png
 Screenshots2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
