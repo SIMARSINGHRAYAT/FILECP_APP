@@ -118,7 +118,7 @@ Use this only if you specifically need an EXE installer submission.
    ```
 4. **Host** `dist\filecp_setup.exe` at a public URL
 5. **In Partner Center**, choose **Win32 Package** and provide:
-   - Package URL: `https://your-host.com/filecp_setup.exe`
+   - Package URL: `https://github.com/SIMARSINGHRAYAT/FILECP_APP/releases/download/v1.0.0/filecp_setup.exe`
    - Silent install params: `/VERYSILENT /SUPPRESSMSGBOXES /NORESTART`
 
 ### Validate Before Submission
