@@ -1,4 +1,4 @@
-Field,Type,English
+﻿Field,Type,English
 ProductName,Text,filecp
 Description,Text,"Instant, Private, and Seamless File Sharing. Upload files on one device, scan a QR code, and download them on another. No accounts, no tracking, just transfer. Features: QR code pairing for instant sharing; files encrypted at rest on server; sessions auto-expire (1 min to 24 hours); send and receive modes; supports all file types up to 200 MB; zero accounts required; downloads save directly to your Downloads folder; native Windows desktop app with Edge WebView2."
 WhatsNew,Text,Initial release
@@ -22,7 +22,7 @@ ProductFeatures17,Text,
 ProductFeatures18,Text,
 ProductFeatures19,Text,
 ProductFeatures20,Text,
-ShortDescription,Text,"Instant, Private, and Seamless File Sharing"
+ShortDescription,Text,Instant, Private, and Seamless File Sharing
 SearchTerms1,Text,file sharing
 SearchTerms2,Text,file transfer
 SearchTerms3,Text,QR code
@@ -31,7 +31,7 @@ SearchTerms5,Text,encrypted transfer
 SearchTerms6,Text,cross-device
 SearchTerms7,Text,private sharing
 Applicable license terms,Text,MIT
-Copyright,Text,"Copyright (c) 2026 Simar Singh Rayat. All rights reserved."
+Copyright,Text,Copyright (c) 2026 Simar Singh Rayat. All rights reserved.
 DevelopedBy,Text,Simar Singh Rayat
 RequirementsMinimum1,Text,
 RequirementsMinimum2,Text,
@@ -55,17 +55,17 @@ RequirementsRecommended8,Text,
 RequirementsRecommended9,Text,
 RequirementsRecommended10,Text,
 RequirementsRecommended11,Text,
-StoreLogos1,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-StoreLogos2,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots1,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots2,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots3,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots4,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots5,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots6,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots7,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots8,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots9,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
-Screenshots10,"Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise",
+StoreLogos1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/StoreLogo.png
+StoreLogos2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots3,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots4,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots5,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots6,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots7,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots8,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots9,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots10,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
 HeroArts,Text,
 Trailers,Text,
