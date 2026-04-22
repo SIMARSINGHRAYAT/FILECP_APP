@@ -1,0 +1,78 @@
+import csv
+import io
+
+data = '''Field,Type,English
+ProductName,Text,filecp
+Description,Text,"Instant, Private, and Seamless File Sharing. Upload files on one device, scan a QR code, and download them on another. No accounts, no tracking, just transfer. Features: QR code pairing for instant sharing; files encrypted at rest on server; sessions auto-expire (1 min to 24 hours); send and receive modes; supports all file types up to 200 MB; zero accounts required; downloads save directly to your Downloads folder; native Windows desktop app with Edge WebView2."
+WhatsNew,Text,Initial release
+ProductFeatures1,Text,QR code pairing for instant sharing
+ProductFeatures2,Text,Files encrypted at rest on server
+ProductFeatures3,Text,Sessions auto-expire
+ProductFeatures4,Text,Send and receive modes
+ProductFeatures5,Text,Supports all file types up to 200 MB
+ProductFeatures6,Text,
+ProductFeatures7,Text,
+ProductFeatures8,Text,
+ProductFeatures9,Text,
+ProductFeatures10,Text,
+ProductFeatures11,Text,
+ProductFeatures12,Text,
+ProductFeatures13,Text,
+ProductFeatures14,Text,
+ProductFeatures15,Text,
+ProductFeatures16,Text,
+ProductFeatures17,Text,
+ProductFeatures18,Text,
+ProductFeatures19,Text,
+ProductFeatures20,Text,
+ShortDescription,Text,Instant, Private, and Seamless File Sharing
+SearchTerms1,Text,file sharing
+SearchTerms2,Text,file transfer
+SearchTerms3,Text,QR code
+SearchTerms4,Text,send files
+SearchTerms5,Text,encrypted transfer
+SearchTerms6,Text,cross-device
+SearchTerms7,Text,private sharing
+Applicable license terms,Text,MIT
+Copyright,Text,Copyright (c) 2026 Simar Singh Rayat. All rights reserved.
+DevelopedBy,Text,Simar Singh Rayat
+RequirementsMinimum1,Text,
+RequirementsMinimum2,Text,
+RequirementsMinimum3,Text,
+RequirementsMinimum4,Text,
+RequirementsMinimum5,Text,
+RequirementsMinimum6,Text,
+RequirementsMinimum7,Text,
+RequirementsMinimum8,Text,
+RequirementsMinimum9,Text,
+RequirementsMinimum10,Text,
+RequirementsMinimum11,Text,
+RequirementsRecommended1,Text,
+RequirementsRecommended2,Text,
+RequirementsRecommended3,Text,
+RequirementsRecommended4,Text,
+RequirementsRecommended5,Text,
+RequirementsRecommended6,Text,
+RequirementsRecommended7,Text,
+RequirementsRecommended8,Text,
+RequirementsRecommended9,Text,
+RequirementsRecommended10,Text,
+RequirementsRecommended11,Text,
+StoreLogos1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,store_assets/StoreLogo.png
+StoreLogos2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots1,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots2,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots3,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots4,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots5,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots6,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots7,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots8,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots9,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+Screenshots10,Provide the file name only if it is in the same folder. Provide relative path to image starting with the subfolder name otherwise,
+HeroArts,Text,
+Trailers,Text,
+'''
+
+with open("store_listing.csv", "w", encoding="utf-8-sig", newline="") as f:
+    f.write(data)
