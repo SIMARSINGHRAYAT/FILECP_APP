@@ -14,8 +14,11 @@ AppVersion,1.0.0.0
 InstallerType,MSIX
 PackageUrl_MSIX,dist\filecp.msix
 InstallerType_EXE,Win32 Package
+PackageType_EXE,Win32 Package
 PackageUrl_EXE,https://github.com/SIMARSINGHRAYAT/FILECP_APP/releases/download/v1.0.0/filecp_setup.exe
+PackageUrl_Win32Package,https://github.com/SIMARSINGHRAYAT/FILECP_APP/releases/download/v1.0.0/filecp_setup.exe
 InstallerParameters_EXE,/VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+InstallerParameters_Win32Package,/VERYSILENT /SUPPRESSMSGBOXES /NORESTART
 Architecture,x64
 MinimumOperatingSystemVersion,Windows 10 version 1809 (10.0.17763.0)
 Languages,en-us
