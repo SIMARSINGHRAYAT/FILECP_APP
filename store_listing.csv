@@ -1,33 +1,71 @@
-Field,Value
-ProductName,filecp
-ShortTitle,filecp - File Sharing
-Voice title,file c p
-ShortDescription,"Instant, Private, and Seamless File Sharing"
+Property name,English
 Description,"Instant, Private, and Seamless File Sharing. Upload files on one device, scan a QR code, and download them on another. No accounts, no tracking, just transfer. Features: QR code pairing for instant sharing; files encrypted at rest on server; sessions auto-expire (1 min to 24 hours); send and receive modes; supports all file types up to 200 MB; zero accounts required; downloads save directly to your Downloads folder; native Windows desktop app with Edge WebView2."
 WhatsNew,Initial release
-Category,Productivity
-Subcategory,File managers
-PrivacyPolicyUrl,https://simarsinghrayat.github.io/Window_app_filecp/privacy.html
-WebsiteUrl,https://github.com/SIMARSINGHRAYAT/Window_app_filecp
-SupportUrl,https://github.com/SIMARSINGHRAYAT/Window_app_filecp/issues
-AppVersion,1.0.0.0
-InstallerType,MSIX
-PackageUrl_MSIX,dist\filecp.msix
-InstallerType_EXE,Win32 Package
-PackageType_EXE,Win32 Package
-PackageUrl_EXE,https://github.com/SIMARSINGHRAYAT/FILECP_APP/releases/download/v1.0.0/filecp_setup.exe
-PackageUrl_Win32Package,https://github.com/SIMARSINGHRAYAT/FILECP_APP/releases/download/v1.0.0/filecp_setup.exe
-InstallerParameters_EXE,/VERYSILENT /SUPPRESSMSGBOXES /NORESTART
-InstallerParameters_Win32Package,/VERYSILENT /SUPPRESSMSGBOXES /NORESTART
-Architecture,x64
-MinimumOperatingSystemVersion,Windows 10 version 1809 (10.0.17763.0)
-Languages,en-us
-AgeRating,3+
-Pricing,Free
-SearchTerms,"file sharing, file transfer, QR code, send files, encrypted transfer, cross-device, no account, private sharing"
-CopyrightAndTrademarkInfo,"Copyright (c) 2026 Simar Singh Rayat. All rights reserved."
-LicenseTerms,MIT
-DeveloperName,Simar Singh Rayat
+ProductFeatures1,QR code pairing for instant sharing
+ProductFeatures2,Files encrypted at rest on server
+ProductFeatures3,Sessions auto-expire
+ProductFeatures4,Send and receive modes
+ProductFeatures5,Supports all file types up to 200 MB
+ProductFeatures6,
+ProductFeatures7,
+ProductFeatures8,
+ProductFeatures9,
+ProductFeatures10,
+ProductFeatures11,
+ProductFeatures12,
+ProductFeatures13,
+ProductFeatures14,
+ProductFeatures15,
+ProductFeatures16,
+ProductFeatures17,
+ProductFeatures18,
+ProductFeatures19,
+ProductFeatures20,
+ShortDescription,"Instant, Private, and Seamless File Sharing"
+SearchTerms1,file sharing
+SearchTerms2,file transfer
+SearchTerms3,QR code
+SearchTerms4,send files
+SearchTerms5,encrypted transfer
+SearchTerms6,cross-device
+SearchTerms7,private sharing
+Applicable license terms,MIT
+Copyright,"Copyright (c) 2026 Simar Singh Rayat. All rights reserved."
+DevelopedBy,Simar Singh Rayat
+RequirementsMinimum1,
+RequirementsMinimum2,
+RequirementsMinimum3,
+RequirementsMinimum4,
+RequirementsMinimum5,
+RequirementsMinimum6,
+RequirementsMinimum7,
+RequirementsMinimum8,
+RequirementsMinimum9,
+RequirementsMinimum10,
+RequirementsMinimum11,
+RequirementsRecommended1,
+RequirementsRecommended2,
+RequirementsRecommended3,
+RequirementsRecommended4,
+RequirementsRecommended5,
+RequirementsRecommended6,
+RequirementsRecommended7,
+RequirementsRecommended8,
+RequirementsRecommended9,
+RequirementsRecommended10,
+RequirementsRecommended11,
+StoreLogos1,
+StoreLogos2,
+Screenshots1,
+Screenshots2,
+Screenshots3,
+Screenshots4,
+Screenshots5,
+Screenshots6,
+Screenshots7,
+Screenshots8,
+Screenshots9,
+Screenshots10,
 PublisherName,Simar Singh Rayat
 SubmissionNotes_MSIX,"Upload dist\filecp.msix directly to Partner Center. MSIX is the recommended format — it automatically handles silent install, Add/Remove Programs registration, and code signing (Microsoft re-signs during ingestion)."
 SubmissionNotes_EXE,"Upload filecp_setup.exe to a public URL and provide it as Package URL. Silent install params: /VERYSILENT /SUPPRESSMSGBOXES /NORESTART. REQUIRES a CA-trusted SHA256 code signing certificate (self-signed is NOT accepted for EXE submissions)."
